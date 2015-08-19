@@ -1,22 +1,22 @@
 ---
-:java:
-  :java_version: java-7-openjdk
-  :maven_version: 3.0.5
+java:
+  java_version: java-7-openjdk
+  maven_version: 3.0.5
 
-:ruby_version: ruby-1.9.3
+ruby_version: ruby-1.9.3
 
 test_pattern:
   - '**/*Test.java'
 
-:tests:
+tests:
 - type: junit
-#  command: mvn test && cp art/rep.xml target/surefire-reports/TEST-com.app.IntegrationTest.xml
-  command: bin/solano-runner
+  command: mvn test && cp art/rep.xml target/surefire-reports/TEST-com.app.IntegrationTest.xml
+#  command: bin/solano-runner
   mode: basic
-  mode: parallel
-  output: exit-code
-  files:
-    - include: '**/*Test.java'
+#  mode: parallel
+#  output: exit-code
+#  files:
+#    - include: '**/*Test.java'
   report_files:
     - "**/surefire-reports/TEST-*.xml"
 

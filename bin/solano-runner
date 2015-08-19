@@ -17,6 +17,6 @@ cmd += "cd #{options[:prefix]} && " if options[:prefix]
 cmd += "mvn -Dtest=#{classes.join(",")} test"
 cmd += ")"
  
-puts cmd
+puts "IL:::"+cmd
  
 system(cmd)
