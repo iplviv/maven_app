@@ -5,8 +5,8 @@ java:
 
 ruby_version: ruby-1.9.3
 
-test_pattern:
-  - '**/*Test.java'
+#test_pattern:
+#  - '**/*Test.java'
 
 tests:
 - type: junit
