@@ -20,7 +20,3 @@ tests:
   report_files:
     - "**/surefire-reports/TEST-*.xml"
 
-#- type: custom
-#  command: mvn --help
-#  invocation: single
-#  output: exit-status
